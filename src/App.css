@@ -12,8 +12,8 @@ html,
 body {
   background: #f5e9fd url('img/Fundo_GERAL_com_menu_sem_logo.png') no-repeat
     center center/cover;
-  background-size: 105% 103%;
-  height: 100vh;
+  background-size: 101% 102%;
+  height: 101vh;
   color: #fff;
   font-family: Arial;
 }
@@ -130,21 +130,21 @@ input[type='text'] {
 }
 
 .buttonLogo {
-  width: 250px;
-  height: 100px;
+  width: 200px;
+  height: 170px;
 }
 
 .ulHeader {
-  padding-left: 15rem;
+  /* padding-left: 15rem; */
 }
 
 @media (max-width: 1024px) {
   .ulHeader {
-    padding-left: 10rem;
+    /* padding-left: 10rem; */
   }
   .buttonLogo {
-    width: 150px;
-    height: 60px;
+    /* width: 150px; */
+    /* height: 60px; */
   }
 }
 

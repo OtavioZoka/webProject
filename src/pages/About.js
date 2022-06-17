@@ -7,7 +7,7 @@ import {
   ListItemText,
   Typography,
 } from '@mui/material'
-import marvelIco from '../img/marvel.ico'
+import marvelIco from '../img/new-logo-marvel.jpeg'
 
 const BoxStyle = {
   boxShadow: 24,
@@ -81,6 +81,12 @@ const About = () => {
           </ListItem>
           <ListItem sx={{ pb: 0, color: 'black' }}>
             <ListItemText>Daniel Avelino de Paula – 1221116214</ListItemText>
+          </ListItem>
+          <ListItem sx={{ pb: 0, color: 'black' }}>
+            <ListItemText>Ednei Rosa Ferreira – 120112951</ListItemText>
+          </ListItem>
+          <ListItem sx={{ pb: 0, color: 'black' }}>
+            <ListItemText>Murilo Drumond – 118116548</ListItemText>
           </ListItem>
           <ListItem sx={{ pb: 0, color: 'black' }}>
             <ListItemText>Otávio Reis Viana – 11815319</ListItemText>

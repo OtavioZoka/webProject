@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import {
   Box,
   Modal,
-  CardMedia,
+  Tooltip,
   ListItem,
-  ListItemText,
+  CardMedia,
   Accordion,
+  ListItemText,
   AccordionSummary,
   AccordionDetails,
 } from '@mui/material'
@@ -94,13 +95,23 @@ const TableHero = ({ items, isLoading }) => {
                     >
                       <AccordionSummary
                         sx={{ padding: 0, margin: 0 }}
-                        expandIcon={<ExpandMoreIcon />}
                         id="panel1a-header"
                         aria-controls="panel1a-content"
+                        title="Clique para ver mais"
+                        expandIcon={
+                          <ExpandMoreIcon sx={{ fontSize: '42px' }} />
+                        }
                       >
-                        <ListItem sx={{ pb: 0, pt: 0, padding: 0, margin: 0 }}>
-                          <ListItemText>Comics:</ListItemText>
-                        </ListItem>
+                        <Tooltip
+                          title="Clique para ver mais"
+                          placement="bottom-start"
+                        >
+                          <ListItem
+                            sx={{ pb: 0, pt: 0, padding: 0, margin: 0 }}
+                          >
+                            <ListItemText>Comics:</ListItemText>
+                          </ListItem>
+                        </Tooltip>
                       </AccordionSummary>
                       {infoHero?.comics?.items.map((comics) => (
                         <AccordionDetails>
