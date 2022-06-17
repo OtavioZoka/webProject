@@ -5,9 +5,11 @@ const Home = () => {
   return (
     <>
       <Header />
-      <header className="center">
-        <h2>Home</h2>
-      </header>
+      <div className="container">
+        <header className="center">
+          <h1>Home</h1>
+        </header>
+      </div>
     </>
   )
 }

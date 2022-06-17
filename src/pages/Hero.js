@@ -27,11 +27,13 @@ const Hero = () => {
   return (
     <>
       <Header />
-      <header className="center">
-        <h2>Hero</h2>
-      </header>
-      <Search search={q => setQuery(q)} />
-      <TableHero items={items} isLoading={isLoading} />)
+      <div className="container">
+        <header className="center">
+          <h3>Personagens da Marvel</h3>
+        </header>
+        <Search search={(q) => setQuery(q)} />
+        <TableHero items={items} isLoading={isLoading} />)
+      </div>
     </>
   )
 }

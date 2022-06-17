@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Box from '@mui/material/Box'
-import Modal from '@mui/material/Modal'
 import {
+  Box,
+  Modal,
   CardMedia,
   ListItem,
   ListItemText,
