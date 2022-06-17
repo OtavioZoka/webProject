@@ -24,17 +24,24 @@ const navStyle = {
 const ulStyle = {
   height: '40px',
   width: '100%',
+  padding: '0 6rem',
   display: 'flex',
   listStyle: 'none',
   alignItems: 'center',
   border: '2px solid #1e1e1e',
-  justifyContent: 'center',
+  justifyContent: '<space-around></space-around>',
   background: 'linear-gradient(#333333 5%, black 55%)',
 }
+
 const linkStyle = {
   color: 'white',
   fontSize: '20px',
   margin: '16px 24px',
+}
+
+const dividerStyle = {
+  borderWidth: '1px',
+  borderColor: '#e1e1e11f',
 }
 
 const Header = () => {
@@ -57,13 +64,13 @@ const Header = () => {
             Home
           </Link>
         </li>
-        <Divider orientation="vertical" />
+        <Divider orientation="vertical" sx={dividerStyle} />
         <li>
           <Link style={linkStyle} to="/hero">
             Personagens
           </Link>
         </li>
-        <Divider orientation="vertical" />
+        <Divider orientation="vertical" sx={dividerStyle} />
         <li>
           <Link style={linkStyle} to="/About">
             Info

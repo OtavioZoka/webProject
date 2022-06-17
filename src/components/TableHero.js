@@ -46,7 +46,7 @@ const TableHero = ({ items, isLoading }) => {
   const handleCloseModal = () => {
     setOpenModal(false)
   }
-  console.log('info ->', informationCard?.item?.comics?.items.length)
+
   return (
     <>
       {isLoading ? (

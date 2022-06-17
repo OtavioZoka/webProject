@@ -40,11 +40,11 @@ a {
 }
 
 header {
-  height: 250px;
+  height: 15rem;
 }
 
-header img {
-  width: 350px;
+header h1 {
+  text-shadow: 1px 1px 3px black;
 }
 
 .center {
