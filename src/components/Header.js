@@ -4,10 +4,9 @@ import { useHistory } from 'react-router-dom'
 import marvelLogo from '../img/marvel-logo.png'
 
 const ButtonStyle = {
-  width: '250px',
-  height: '100px',
   background: `url(${marvelLogo}) center center / contain no-repeat`,
   border: 'none',
+  position: 'absolute',
 }
 
 const navStyle = {
@@ -16,10 +15,13 @@ const navStyle = {
 
 const ulStyle = {
   height: '40px',
+  width: '55%',
   display: 'flex',
   listStyle: 'none',
   alignItems: 'center',
-  justifyContent: 'center',
+  border: '2px solid #1e1e1e',
+  justifyContent: 'flex-start',
+  background: 'linear-gradient(#333333 5%, black 55%)',
 }
 const linkStyle = {
   color: 'white',
@@ -36,8 +38,12 @@ const Header = () => {
 
   return (
     <nav style={navStyle}>
-      <button style={ButtonStyle} onClick={routeChange}></button>
-      <ul style={ulStyle}>
+      <button
+        className="buttonLogo"
+        style={ButtonStyle}
+        onClick={routeChange}
+      ></button>
+      <ul className="ulHeader" style={ulStyle}>
         <li>
           <Link style={linkStyle} to="/">
             Home

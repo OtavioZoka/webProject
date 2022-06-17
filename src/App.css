@@ -40,7 +40,7 @@ a {
 }
 
 header {
-  height: 400px;
+  height: 250px;
 }
 
 header img {
@@ -49,11 +49,13 @@ header img {
 
 .center {
   display: flex;
-  align-items: center;
+  align-items: end;
+  margin-bottom: 3rem;
 }
 
 .search {
   height: 100px;
+  margin-top: 3rem;
 }
 
 input[type='text'] {
@@ -125,6 +127,25 @@ input[type='text'] {
 .content li {
   list-style: none;
   padding-bottom: 10px;
+}
+
+.buttonLogo {
+  width: 250px;
+  height: 100px;
+}
+
+.ulHeader {
+  padding-left: 15rem;
+}
+
+@media (max-width: 1024px) {
+  .ulHeader {
+    padding-left: 10rem;
+  }
+  .buttonLogo {
+    width: 150px;
+    height: 60px;
+  }
 }
 
 @media (max-width: 800px) {

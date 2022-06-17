@@ -11,7 +11,7 @@ import marvelIco from '../img/marvel.ico'
 
 const BoxStyle = {
   boxShadow: 24,
-  padding: '24px',
+  padding: '40px 18rem',
   background: 'white',
   border: '2px solid #e23636',
 }
@@ -19,12 +19,17 @@ const BoxStyle = {
 const BoxImgStyle = {
   boxShadow:
     '0px -15px 8px -10px rgb(0 0 0 / 25%), 0px -15px 8px -10px rgb(0 0 0 / 25%),0px -15px 8px -10px rgb(0 0 0 / 25%)',
+  borderTop: '2px solid #e23636',
+  borderWidth: '3px',
+  borderStyle: 'solid',
+  borderImage: 'linear-gradient(to bottom, #e23636, transparent ) 5 40%',
   margin: '0 auto',
-  marginTop: '-200px',
-  marginBottom: '100px',
+  marginTop: '-216px',
+  marginBottom: '32px',
   padding: '24px 72px',
   background: 'white',
   width: '450px',
+  position: 'relative',
 }
 
 const Typ1Style = {
@@ -57,10 +62,10 @@ const About = () => {
       <Header />
       <div className="container">
         <header className="center">
-          <h1>About</h1>
+          <h1>Info</h1>
         </header>
         <Box sx={BoxStyle}>
-          <Box sx={BoxImgStyle}>
+          <Box sx={BoxImgStyle} id="boxImg">
             <CardMedia sx={CardMediaStyle} component="img" image={marvelIco} />
             <Typography sx={Typ1Style}>Legado Marvel Company</Typography>
             <Typography sx={Typ2Style}>
@@ -69,13 +74,22 @@ const About = () => {
           </Box>
           <Typography sx={Typ3Style}>Lista de membros do grupo</Typography>
           <ListItem sx={{ pb: 0, color: 'black' }}>
-            <ListItemText>Otavio </ListItemText>
+            <ListItemText>Arthur Andrade Rosa – 119118540</ListItemText>
           </ListItem>
           <ListItem sx={{ pb: 0, color: 'black' }}>
-            <ListItemText>Edinei</ListItemText>
+            <ListItemText>Bruno Conrado da Silva – 12114539</ListItemText>
           </ListItem>
           <ListItem sx={{ pb: 0, color: 'black' }}>
-            <ListItemText>Murilo</ListItemText>
+            <ListItemText>Daniel Avelino de Paula – 1221116214</ListItemText>
+          </ListItem>
+          <ListItem sx={{ pb: 0, color: 'black' }}>
+            <ListItemText>Otávio Reis Viana – 11815319</ListItemText>
+          </ListItem>
+          <ListItem sx={{ pb: 0, color: 'black' }}>
+            <ListItemText>Wagner Artur Paulino Jamar - 119213656</ListItemText>
+          </ListItem>
+          <ListItem sx={{ pb: 0, color: 'black' }}>
+            <ListItemText>Wilkerman Viana Lopes - 11722353</ListItemText>
           </ListItem>
         </Box>
       </div>
