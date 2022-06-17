@@ -8,29 +8,6 @@ import {
 } from '@mui/material'
 import marvelIco from '../img/new-logo-marvel.jpeg'
 
-const BoxStyle = {
-  boxShadow: 24,
-  padding: '40px 18rem',
-  background: 'white',
-  border: '2px solid #e23636',
-}
-
-const BoxImgStyle = {
-  boxShadow:
-    '0px -15px 8px -10px rgb(0 0 0 / 25%), 0px -15px 8px -10px rgb(0 0 0 / 25%),0px -15px 8px -10px rgb(0 0 0 / 25%)',
-  borderTop: '2px solid #e23636',
-  borderWidth: '3px',
-  borderStyle: 'solid',
-  borderImage: 'linear-gradient(to bottom, #e23636, transparent ) 5 40%',
-  margin: '0 auto',
-  marginTop: '-216px',
-  marginBottom: '32px',
-  padding: '24px 72px',
-  background: 'white',
-  width: '450px',
-  position: 'relative',
-}
-
 const Typ1Style = {
   color: 'black',
   fontWeight: 'bold',
@@ -48,22 +25,19 @@ const Typ3Style = {
   padding: '0 18px ',
 }
 
-const CardMediaStyle = {
-  objectFit: 'contain',
-  height: '250px',
-  width: '250px',
-  margin: '0 auto',
-}
-
 const About = () => {
   return (
     <div className="container">
       <header className="center">
         <h1>Info</h1>
       </header>
-      <Box sx={BoxStyle}>
-        <Box sx={BoxImgStyle} id="boxImg">
-          <CardMedia sx={CardMediaStyle} component="img" image={marvelIco} />
+      <Box className="BoxStyle">
+        <Box className="BoxImgStyle" id="boxImg">
+          <CardMedia
+            className="CardMediaStyle"
+            component="img"
+            image={marvelIco}
+          />
           <Typography sx={Typ1Style}>Legado Marvel Company</Typography>
           <Typography sx={Typ2Style}>
             Seus personagens preferidos num so lugar

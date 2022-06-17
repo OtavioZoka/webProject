@@ -14,6 +14,10 @@ const BoxStyle = {
   alignItems: 'center',
 }
 
+const imgStyle = {
+  opacity: 0.8,
+}
+
 const App = () => {
   const [isClickHandleGif, setIsClickHandleGif] = useState(false)
   const [isChangeGif, setIsChangeGif] = useState(true)
@@ -28,7 +32,7 @@ const App = () => {
       setIsChangeGif(isClickHandleGif)
       setTimeout(() => {
         setIsChangeGif(false)
-      }, 500)
+      }, 1500)
       setIsClickHandleGif(false)
     }
   }, [isChangeGif, isClickHandleGif])
@@ -40,7 +44,7 @@ const App = () => {
         <Routes />
       ) : (
         <Box style={BoxStyle}>
-          <img height="250" src={gifLoading} />
+          <img style={imgStyle} height="500" src={gifLoading} />
         </Box>
       )}
     </>

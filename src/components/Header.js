@@ -2,24 +2,6 @@ import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { Button, Divider } from '@mui/material'
 
-const navStyle = {
-  display: 'flex',
-  justifyContent: 'center',
-  position: 'relative',
-}
-
-const ulStyle = {
-  padding: '0 6rem',
-  display: 'flex',
-  listStyle: 'none',
-  alignItems: 'center',
-  border: '2px solid #1e1e1e',
-  justifyContent: 'space-around',
-  background: 'linear-gradient(#333333 5%, black 55%)',
-  height: '50px',
-  width: '100%',
-}
-
 const liStyle = {
   justifyContent: 'center',
   alignItems: 'center',
@@ -50,8 +32,8 @@ const Header = ({ isChangeGif }) => {
     isChangeGif(true)
   }
   return (
-    <nav style={navStyle}>
-      <ul className="ulHeader" style={ulStyle}>
+    <nav>
+      <ul className="ulHeader">
         <li className="liHeader" style={liStyle}>
           <Button style={linkStyle} onClick={() => routeChange('/')}>
             Home
