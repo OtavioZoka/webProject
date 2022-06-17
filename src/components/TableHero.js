@@ -97,7 +97,6 @@ const TableHero = ({ items, isLoading }) => {
                         sx={{ padding: 0, margin: 0 }}
                         id="panel1a-header"
                         aria-controls="panel1a-content"
-                        title="Clique para ver mais"
                         expandIcon={
                           <ExpandMoreIcon sx={{ fontSize: '42px' }} />
                         }

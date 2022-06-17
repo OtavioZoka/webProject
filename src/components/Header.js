@@ -1,19 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Divider } from '@mui/material'
-import { useHistory } from 'react-router-dom'
-import marvelLogo from '../img/new-logo-marvel.jpeg'
-
-const ButtonStyle = {
-  background: `url(${marvelLogo}) center center / contain no-repeat`,
-  border: 'none',
-  position: 'absolute',
-  left: '0',
-  backgroundColor: 'white',
-  borderBottom: '10px solid white',
-  borderTop: '10px solid white',
-  display: 'none',
-}
 
 const navStyle = {
   display: 'flex',
@@ -22,21 +9,30 @@ const navStyle = {
 }
 
 const ulStyle = {
-  height: '40px',
-  width: '100%',
   padding: '0 6rem',
   display: 'flex',
   listStyle: 'none',
   alignItems: 'center',
   border: '2px solid #1e1e1e',
-  justifyContent: '<space-around></space-around>',
+  justifyContent: 'space-around',
   background: 'linear-gradient(#333333 5%, black 55%)',
+  height: '50px',
+  width: '100%',
+}
+
+const liStyle = {
+  justifyContent: 'center',
+  alignItems: 'center',
+  display: 'flex',
+  width: '100%',
+  height: '100%',
 }
 
 const linkStyle = {
   color: 'white',
   fontSize: '20px',
-  margin: '16px 24px',
+  width: '100%',
+  textAlign: 'center',
 }
 
 const dividerStyle = {
@@ -45,33 +41,22 @@ const dividerStyle = {
 }
 
 const Header = () => {
-  const history = useHistory()
-  const routeChange = () => {
-    let path = `/`
-    history.push(path)
-  }
-
   return (
     <nav style={navStyle}>
-      <button
-        className="buttonLogo"
-        style={ButtonStyle}
-        onClick={routeChange}
-      ></button>
       <ul className="ulHeader" style={ulStyle}>
-        <li>
+        <li className="liHeader" style={liStyle}>
           <Link style={linkStyle} to="/">
             Home
           </Link>
         </li>
         <Divider orientation="vertical" sx={dividerStyle} />
-        <li>
+        <li className="liHeader" style={liStyle}>
           <Link style={linkStyle} to="/hero">
             Personagens
           </Link>
         </li>
         <Divider orientation="vertical" sx={dividerStyle} />
-        <li>
+        <li className="liHeader" style={liStyle}>
           <Link style={linkStyle} to="/About">
             Info
           </Link>
