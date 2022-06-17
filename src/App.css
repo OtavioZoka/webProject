@@ -4,9 +4,14 @@
   padding: 0;
 }
 
+.Mui-Modal .MuiBox-root::-webkit-scrollbar {
+  width: 0px;
+}
+
 html,
 body {
-  background: #f5e9fd url('img/Fundo_GERAL_com_menu.png') no-repeat center center/cover;
+  background: #f5e9fd url('img/Fundo_GERAL_com_menu_sem_logo.png') no-repeat
+    center center/cover;
   background-size: 105% 103%;
   height: 100vh;
   color: #fff;

@@ -1,14 +1,5 @@
 import React, { useState } from 'react'
 
-const InputStyle = {
-  border: '2px solid #e23636',
-  '&:focus-visible': {
-    '.form-control': {
-      outline: 'none',
-    },
-  },
-}
-
 const Search = ({ search }) => {
   const [text, setText] = useState('')
 
@@ -21,7 +12,6 @@ const Search = ({ search }) => {
     <section className="search">
       <form>
         <input
-          style={InputStyle}
           type="text"
           className="form-control"
           placeholder="Pesquisar"

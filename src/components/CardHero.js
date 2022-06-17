@@ -3,11 +3,11 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
-import { Button, CardActionArea, CardActions } from '@mui/material'
-import HeroDefault from '../img/hero_default.png'
+import { CardActionArea } from '@mui/material'
+import imgReplace from '../img/hero_default.png'
 
 const CardStyle = {
-  maxWidth: 345,
+  maxWidth: 250,
   background: 'white',
   border: '2px solid #e23636',
   boxShadow: 'none !important',
@@ -27,7 +27,7 @@ const CardActionAreaStyle = {
       opacity: '0',
     },
     filter: 'hue-rotate(90deg)',
-    transition: 'all 0.4s ease-in',
+    transition: 'all 0.3s ease-in',
   },
 }
 
@@ -37,24 +37,7 @@ const CardMediaStyle = {
   width: '250px',
 }
 
-const CardActionStyle = {
-  width: '100%',
-}
-const ButtonStyle = {
-  color: 'white',
-  width: '100%',
-  background: '#e23636',
-  '&:hover': {
-    '.MuiCardMedia-img': {
-      opacity: '0.5',
-    },
-    background: '#e2363690',
-    transition: 'all 0.3s ease-in',
-  },
-}
-
-const CardCharacter = ({ item, openModal, description }) => {
-  const imgReplace = HeroDefault
+const CardCharacter = ({ item, openModal, information }) => {
   const [imagemForHero, setImagemForHero] = useState('')
 
   useEffect(() => {
@@ -71,9 +54,7 @@ const CardCharacter = ({ item, openModal, description }) => {
   }
 
   const handleDescription = () => {
-    item.description.length > 0
-      ? description(item.description)
-      : description('Não há Descrição para o herói')
+    information({ item, imagemForHero })
   }
 
   const handleInformation = () => {

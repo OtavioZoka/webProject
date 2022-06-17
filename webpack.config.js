@@ -8,6 +8,9 @@ const Dotenv = require('dotenv-webpack')
     use: [
       {
         loader: 'file-loader',
+        query: {
+          presets: ['es2015', 'react'],
+        },
         options: {
           name: 'images/[hash]-[name].[ext]',
         },

@@ -1,11 +1,22 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
-    return (
-        <header className="center">
-            <h2>Personagens da Marvel</h2>
-        </header>
-    )
+  return (
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/hero">Personagens</Link>
+        </li>
+        <li>
+          <Link to="/About">Info</Link>
+        </li>
+      </ul>
+    </nav>
+  )
 }
 
 export default Header
