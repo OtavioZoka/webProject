@@ -1,15 +1,15 @@
 <h3 align="center"> Projeto Legado Marvel </h3>
 
 <h1 align="center">
-    <img width= '380' src=".\src\public\img\tela-home.png">
+    <img width= '380' src=".\src\img\tela-home.png">
 </h1>
 
 <h1 align="center">
-    <img width= '380' src=".\src\public\img\tela-hero.png">
+    <img width= '380' src=".\src\img\tela-hero.png">
 </h1>
 
 <h1 align="center">
-    <img width= '380' src=".\src\public\img\tela-about.png">
+    <img width= '380' src=".\src\img\tela-about.png">
 </h1>
 
 # Feedget
