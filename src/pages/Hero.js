@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { resultBystring, resultAll } from '../services/api'
-import Header from '../components/Header'
 import TableHero from '../components/TableHero'
 import Search from '../components/Search'
 
@@ -25,16 +24,13 @@ const Hero = () => {
   }, [query])
 
   return (
-    <>
-      <Header />
-      <div className="container">
-        <header className="center">
-          <h1>Personagens da Marvel</h1>
-        </header>
-        <Search search={(q) => setQuery(q)} />
-        <TableHero items={items} isLoading={isLoading} />)
-      </div>
-    </>
+    <div className="container">
+      <header className="center">
+        <h1>Personagens da Marvel</h1>
+      </header>
+      <Search search={(q) => setQuery(q)} />
+      <TableHero items={items} isLoading={isLoading} />)
+    </div>
   )
 }
 

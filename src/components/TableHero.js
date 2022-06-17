@@ -12,7 +12,7 @@ import {
 } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import CardHero from './CardHero'
-import Avengers_Logo from '../img/Avengers_Logo'
+import gifLoading from '../img/marvel-avengers.gif'
 import imgReplace from '../img/hero_default.png'
 
 const BoxStyle = {
@@ -29,6 +29,14 @@ const BoxStyle = {
   bgcolor: 'background.paper',
   justifyContent: 'space-around',
   transform: 'translate(-50%, -50%)',
+}
+
+const BoxStyleGif = {
+  width: '100%',
+  height: '100%',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
 }
 
 const CardMediaStyle = {
@@ -49,10 +57,10 @@ const TableHero = ({ items, isLoading }) => {
 
   return (
     <>
-      {isLoading ? (
-        <section>
-          <Avengers_Logo />
-        </section>
+      {!isLoading ? (
+        <Box style={BoxStyleGif}>
+          <img height="250" src={gifLoading} />
+        </Box>
       ) : (
         <section className="contents">
           {items.map((item) => (

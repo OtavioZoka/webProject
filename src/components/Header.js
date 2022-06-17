@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { Divider } from '@mui/material'
+import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
+import { Button, Divider } from '@mui/material'
 
 const navStyle = {
   display: 'flex',
@@ -40,26 +40,34 @@ const dividerStyle = {
   borderColor: '#e1e1e11f',
 }
 
-const Header = () => {
+const Header = ({ isChangeGif }) => {
+  const history = useHistory()
+
+  const routeChange = (value) => {
+    let path = `${value}`
+    history.push(path)
+
+    isChangeGif(true)
+  }
   return (
     <nav style={navStyle}>
       <ul className="ulHeader" style={ulStyle}>
         <li className="liHeader" style={liStyle}>
-          <Link style={linkStyle} to="/">
+          <Button style={linkStyle} onClick={() => routeChange('/')}>
             Home
-          </Link>
+          </Button>
         </li>
         <Divider orientation="vertical" sx={dividerStyle} />
         <li className="liHeader" style={liStyle}>
-          <Link style={linkStyle} to="/hero">
+          <Button style={linkStyle} onClick={() => routeChange('/hero')}>
             Personagens
-          </Link>
+          </Button>
         </li>
         <Divider orientation="vertical" sx={dividerStyle} />
         <li className="liHeader" style={liStyle}>
-          <Link style={linkStyle} to="/About">
+          <Button style={linkStyle} onClick={() => routeChange('/about')}>
             Info
-          </Link>
+          </Button>
         </li>
       </ul>
     </nav>
