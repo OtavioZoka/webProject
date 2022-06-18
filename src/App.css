@@ -49,7 +49,7 @@ header h1 {
 
 .center {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   margin-bottom: 3rem;
 }
 
