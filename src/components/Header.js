@@ -22,15 +22,14 @@ const dividerStyle = {
   borderColor: '#e1e1e11f',
 }
 
-const Header = ({ isChangeGif }) => {
+const Header = () => {
   const history = useHistory()
 
   const routeChange = (value) => {
     let path = `${value}`
     history.push(path)
-
-    isChangeGif(true)
   }
+
   return (
     <nav>
       <ul className="ulHeader">
