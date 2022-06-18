@@ -184,6 +184,15 @@ nav ul {
     grid-template-columns: repeat(3, 250px);
     justify-content: center;
   }
+
+  .BoxImgStyle {
+    padding: 8px 18px;
+    width: 100%;
+    border: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: unset;
+  }
 }
 
 @media (max-width: 800px) {
@@ -195,9 +204,9 @@ nav ul {
 
 @media (max-width: 500px) {
   .CardMediaStyle {
-    /* object-fit: cover; */
     height: 180px;
   }
+
   .BoxImgStyle {
     padding: 8px 18px;
     width: 100%;
@@ -216,12 +225,14 @@ nav ul {
     position: -webkit-sticky;
     top: 0;
   }
+
   nav ul {
     padding: 0;
     display: block;
     height: unset;
     background: black;
   }
+
   .contents {
     grid-template-columns: 250px;
     justify-content: center;
