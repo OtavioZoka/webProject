@@ -193,6 +193,10 @@ nav ul {
     box-shadow: none;
     position: unset;
   }
+
+  .BoxStyle {
+    padding: 12px;
+  }
 }
 
 @media (max-width: 800px) {
