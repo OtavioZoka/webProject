@@ -3,7 +3,6 @@ import Routes from './services/routes'
 import gifLoading from './img/marvel-avengers.gif'
 
 import { Box } from '@mui/material'
-import Header from './components/Header'
 import './App.css'
 
 const BoxStyle = {
@@ -19,7 +18,6 @@ const imgStyle = {
 }
 
 const App = () => {
-  const [isClickHandleGif, setIsClickHandleGif] = useState(false)
   const [isChangeGif, setIsChangeGif] = useState(true)
 
   useEffect(() => {
@@ -28,18 +26,10 @@ const App = () => {
         setIsChangeGif(false)
       }, 1500)
     }
-    if (isClickHandleGif) {
-      setIsChangeGif(isClickHandleGif)
-      setTimeout(() => {
-        setIsChangeGif(false)
-      }, 1500)
-      setIsClickHandleGif(false)
-    }
-  }, [isChangeGif, isClickHandleGif])
+  }, [isChangeGif])
 
   return (
     <>
-      <Header isChangeGif={setIsClickHandleGif} />
       {!isChangeGif ? (
         <Routes />
       ) : (

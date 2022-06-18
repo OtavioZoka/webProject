@@ -179,7 +179,12 @@ nav ul {
   margin: 0 auto;
 }
 
-/* @media (max-width: 1024px) {} */
+@media (max-width: 1024px) {
+  .contents {
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+  }
+}
 
 @media (max-width: 800px) {
   .contents {
@@ -194,9 +199,12 @@ nav ul {
     height: 180px;
   }
   .BoxImgStyle {
-    margin: -50px auto 24px auto;
-    padding: 12px;
-    width: 250px;
+    padding: 8px 18px;
+    width: 100%;
+    border: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: unset;
   }
 
   .BoxStyle {
