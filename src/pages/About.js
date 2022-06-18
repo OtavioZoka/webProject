@@ -46,31 +46,35 @@ const About = () => {
               Seus personagens preferidos num so lugar
             </Typography>
           </Box>
-          <Typography sx={Typ3Style}>Lista de membros do grupo</Typography>
-          <ListItem sx={{ pb: 0, color: 'black' }}>
-            <ListItemText>Arthur Andrade Rosa – 119118540</ListItemText>
-          </ListItem>
-          <ListItem sx={{ pb: 0, color: 'black' }}>
-            <ListItemText>Bruno Conrado da Silva – 12114539</ListItemText>
-          </ListItem>
-          <ListItem sx={{ pb: 0, color: 'black' }}>
-            <ListItemText>Daniel Avelino de Paula – 1221116214</ListItemText>
-          </ListItem>
-          <ListItem sx={{ pb: 0, color: 'black' }}>
-            <ListItemText>Ednei Rosa Ferreira – 120112951</ListItemText>
-          </ListItem>
-          <ListItem sx={{ pb: 0, color: 'black' }}>
-            <ListItemText>Murilo Drumond – 118116548</ListItemText>
-          </ListItem>
-          <ListItem sx={{ pb: 0, color: 'black' }}>
-            <ListItemText>Otávio Reis Viana – 11815319</ListItemText>
-          </ListItem>
-          <ListItem sx={{ pb: 0, color: 'black' }}>
-            <ListItemText>Wagner Artur Paulino Jamar - 119213656</ListItemText>
-          </ListItem>
-          <ListItem sx={{ pb: 0, color: 'black' }}>
-            <ListItemText>Wilkerman Viana Lopes - 11722353</ListItemText>
-          </ListItem>
+          <Box className="BoxTextStyle">
+            <Typography sx={Typ3Style}>Lista de membros do grupo</Typography>
+            <ListItem sx={{ pb: 0, color: 'black' }}>
+              <ListItemText>Arthur Andrade Rosa – 119118540</ListItemText>
+            </ListItem>
+            <ListItem sx={{ pb: 0, color: 'black' }}>
+              <ListItemText>Bruno Conrado da Silva – 12114539</ListItemText>
+            </ListItem>
+            <ListItem sx={{ pb: 0, color: 'black' }}>
+              <ListItemText>Daniel Avelino de Paula – 1221116214</ListItemText>
+            </ListItem>
+            <ListItem sx={{ pb: 0, color: 'black' }}>
+              <ListItemText>Ednei Rosa Ferreira – 120112951</ListItemText>
+            </ListItem>
+            <ListItem sx={{ pb: 0, color: 'black' }}>
+              <ListItemText>Murilo Drumond – 118116548</ListItemText>
+            </ListItem>
+            <ListItem sx={{ pb: 0, color: 'black' }}>
+              <ListItemText>Otávio Reis Viana – 11815319</ListItemText>
+            </ListItem>
+            <ListItem sx={{ pb: 0, color: 'black' }}>
+              <ListItemText>
+                Wagner Artur Paulino Jamar - 119213656
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ pb: 0, color: 'black' }}>
+              <ListItemText>Wilkerman Viana Lopes - 11722353</ListItemText>
+            </ListItem>
+          </Box>
         </Box>
       </div>
     </>

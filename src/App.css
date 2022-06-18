@@ -153,17 +153,16 @@ nav ul {
 }
 
 .BoxImgStyle {
-  box-shadow: 0px -15px 8px -10px rgb(0 0 0 / 25%),
-    0px -15px 8px -10px rgb(0 0 0 / 25%), 0px -15px 8px -10px rgb(0 0 0 / 25);
+  box-shadow: 0px -10px 10px 0px rgb(0 0 0 / 25%);
   border-top: 2px solid #e23636;
   border-width: 3px;
   border-style: solid;
   border-image: linear-gradient(to bottom, #e23636, transparent) 5 40%;
-  margin: -216px auto 32px auto;
-  padding: 24px 72px;
+  padding: 24px;
   background: white;
-  width: 450px;
-  position: relative;
+  width: 100%;
+  margin-top: -250px !important;
+  margin: 0 auto;
 }
 
 .BoxStyle {
@@ -172,11 +171,14 @@ nav ul {
   border: 2px solid #e23636;
 }
 
-.CardMediaStyle {
+img.CardMediaStyle {
   object-fit: contain;
-  height: 250px;
-  width: 250px;
+  width: 100%;
   margin: 0 auto;
+}
+
+.BoxTextStyle {
+  padding: 24px 0;
 }
 
 @media (max-width: 1024px) {
@@ -187,41 +189,73 @@ nav ul {
 
   .BoxImgStyle {
     padding: 8px 18px;
-    width: 100%;
-    border: none;
+    width: 50%;
+    margin-top: -150px !important;
     margin: 0 auto;
-    box-shadow: none;
-    position: unset;
+  }
+
+  img.CardMediaStyle {
+    width: 50%;
   }
 
   .BoxStyle {
+    margin: 0 auto;
+    width: 80%;
     padding: 12px;
+  }
+
+  .BoxTextStyle {
+    padding: 24px 25%;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+  img.CardMediaStyle {
+    width: 75%;
+  }
+
+  .BoxStyle {
+    width: 100%;
+    padding: 12px;
+  }
+
   .contents {
     grid-template-columns: repeat(2, 250px);
     justify-content: center;
   }
+
+  .BoxImgStyle {
+    margin-top: -125px !important;
+    margin: 0 auto;
+  }
 }
 
-@media (max-width: 500px) {
-  .CardMediaStyle {
-    height: 180px;
+@media (max-width: 480px) {
+  img.CardMediaStyle {
+    width: 90%;
+    padding-bottom: 12px;
   }
 
   .BoxImgStyle {
     padding: 8px 18px;
     width: 100%;
     border: none;
+    margin-top: 0px !important;
     margin: 0 auto;
     box-shadow: none;
     position: unset;
   }
+  .BoxTextStyle {
+    padding: 24px;
+  }
+
+  .BoxImgStyle p {
+    padding: 0 18px;
+  }
 
   .BoxStyle {
     padding: 12px;
+    width: 100%;
   }
 
   nav {
